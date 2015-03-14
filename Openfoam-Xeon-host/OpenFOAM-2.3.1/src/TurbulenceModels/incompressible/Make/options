@@ -1,0 +1,12 @@
+EXE_INC = \
+    -I../turbulenceModels/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/transportModels/incompressible/lnInclude
+
+LIB_LIBS = \
+    -lincompressibleTransportModels \
+    -lturbulenceModels \
+    -lfiniteVolume \
+    -lmeshTools \
+	-L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH)

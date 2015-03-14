@@ -1,0 +1,9 @@
+Currently Loaded Modulefiles:
+  1) gcc/gcc-4.9.2
+  2) papi/papi-5.1.0
+  3) openmpi/openmpi-1.8.2_intel-13.0.0
+  4) perfsuite/perfsuite-1.1.4_openmpi-1.8.2_intel-13.0.0
+  5) zlib/zlib-1.2.8_intel-13.0.0
+  6) intel/impi-13.0.0
+  7) jdk/jdk-1.7.0_17
+  8) intel/intel-15.0.1

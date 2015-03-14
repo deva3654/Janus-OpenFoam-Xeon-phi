@@ -1,0 +1,16 @@
+.SUFFIXES: .c .h
+
+cWARN        =
+
+cc          = mpiicc
+
+include $(RULES)/c$(WM_COMPILE_OPTION)
+
+cFLAGS      = $(GFLAGS) $(cWARN) $(cOPT) $(cDBUG) $(LIB_HEADER_DIRS) -fPIC -m64 -fPIC -O3 -g -mmic
+ 
+ctoo        = $(WM_SCHEDULER) $(cc) $(cFLAGS) -c $$SOURCE -o $@
+
+LINK_LIBS   = $(cDBUG) -L$(IA32ROOT)/lib -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH)
+
+LINKLIBSO   = $(cc) $(cFLAGS) -shared -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH)
+LINKEXE     = $(cc) $(cFLAGS) -Xlinker --add-needed -Xlinker -z -Xlinker nodefs -L$(ZLIB_ARCH_PATH) -L$(FLEX_ARCH_PATH)

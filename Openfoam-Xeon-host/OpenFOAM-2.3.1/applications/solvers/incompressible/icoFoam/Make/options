@@ -1,0 +1,21 @@
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude
+
+EXE_LIBS = \
+    -lfiniteVolume \
+    -lsampling \
+	-lirng \	
+	-limf \
+	-ltriSurface \
+	-lfiniteVolume \
+	-llagrangian \
+	-lPstream \
+	-lsampling \
+	-lconversion \
+	-lfileFormats 
+	-lintlc	\
+	-lsvml \
+	-lmeshTools \	
+	-lsurfMesh \
+	-lz

@@ -1,0 +1,40 @@
+rules  =  rules
+rulesGeneral  =  rules/General
+rulesSiCortex64Gcc  =  rules/SiCortex64Gcc
+rulesSunOS64Gcc  =  rules/SunOS64Gcc
+rulesLinux64Clang  =  rules/linux64Clang
+rulesLinux64Gcc++0x  =  rules/linux64Gcc++0x
+rulesLinux64Gcc  =  rules/linux64Gcc
+rulesLinux64Gcc43  =  rules/linux64Gcc43
+rulesLinux64Gcc44  =  rules/linux64Gcc44
+rulesLinux64Gcc45  =  rules/linux64Gcc45
+rulesLinux64Gcc46  =  rules/linux64Gcc46
+rulesLinux64Gcc47  =  rules/linux64Gcc47
+rulesLinux64Gcc48  =  rules/linux64Gcc48
+rulesLinux64Gcc49  =  rules/linux64Gcc49
+rulesLinux64Icc  =  rules/linux64Icc
+rulesLinuxARM7Gcc  =  rules/linuxARM7Gcc
+rulesLinuxClang  =  rules/linuxClang
+rulesLinuxGcc  =  rules/linuxGcc
+rulesLinuxGcc43  =  rules/linuxGcc43
+rulesLinuxGcc44  =  rules/linuxGcc44
+rulesLinuxGcc45  =  rules/linuxGcc45
+rulesLinuxGcc46  =  rules/linuxGcc46
+rulesLinuxGcc47  =  rules/linuxGcc47
+rulesLinuxGcc48  =  rules/linuxGcc48
+rulesLinuxGcc49  =  rules/linuxGcc49
+rulesLinuxIA64Gcc  =  rules/linuxIA64Gcc
+rulesLinuxIA64Icc  =  rules/linuxIA64Icc
+rulesLinuxIcc  =  rules/linuxIcc
+rulesLinuxPPC64Gcc  =  rules/linuxPPC64Gcc
+rulesSolarisGcc  =  rules/solarisGcc
+scripts  =  scripts
+src  =  src
+platforms  =  platforms
+platformsLinux64Icc  =  platforms/linux64Icc
+
+$(src)/dirToString.c
+$(src)/wmkdep.l
+$(src)/lex.yy.c
+
+EXE = $(FOAM_APPBIN)/wmake
